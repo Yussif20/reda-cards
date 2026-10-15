@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-40 shrink-0 border-b border-line bg-surface-2">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-8">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 sm:h-20 sm:px-8">
         <Link
           to="/"
           aria-label={t("common.appName")}
@@ -25,7 +25,7 @@ const Header = () => {
           <RedaHazardControlLogo className="h-7 w-auto sm:h-8" />
         </Link>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
           <LanguageToggle />
           <span aria-hidden="true" className="h-5 w-px bg-line" />
           <ThemeSwitcher />
